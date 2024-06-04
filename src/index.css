@@ -1,0 +1,160 @@
+@font-face {
+  font-family: Inter;
+  src: url(../public/Fonts/Inter-VariableFont_slntwght.ttf);
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Inter";
+}
+
+html {
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.font-inter {
+  font-family: "Inter";
+}
+
+.why-choose-before::before {
+  content: "";
+  background-image: url(../public/images/dots-yellow.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: -15%;
+  left: -20%;
+}
+
+.header-fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  top: 0;
+  animation: Header 1s ease-in-out;
+  box-shadow: 0px 4px 10px #03041c3a;
+}
+
+@keyframes Header {
+  0% {
+    transform: translateY(-90px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+header ul li a.relative::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  position: absolute;
+  bottom: -17%;
+  left: 0;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform 0.3s cubic-bezier(0.74, 0.72, 0.27, 0.24);
+}
+header ul li a.relative:hover::before,
+header ul li a.active:before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 14px !important;
+  font-weight: bolder;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-prev:hover:after,
+.swiper-button-next:hover:after {
+  color: #fff;
+}
+.swiper-pagination {
+  transition: 0.3s opacity;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2%;
+  gap: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #000;
+  opacity: 0.5;
+  border-radius: 50%;
+  display: inline-block;
+  /* margin: 0 4px; */
+  text-align: center;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #3b5d50;
+}
+
+.product-card {
+  position: relative;
+  z-index: 1;
+}
+
+.product-card:before {
+  content: "";
+  width: 100%;
+  background-color: #dce5e4;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  border-radius: 10px;
+  height: 0;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover:before {
+  height: 80%;
+}
+
+.product-card img {
+  transition: all 0.3s ease;
+}
+
+.product-card:hover img {
+  transform: translateY(-25px);
+}
+
+.product-card .add-btn a {
+  opacity: 0;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover .add-btn a {
+  bottom: -4.5%;
+  opacity: 1;
+}
+
+.blog-content .blog-img img {
+  transition: all 0.3s ease;
+}
+
+.blog-content:hover .blog-img img {
+  opacity: 0.7;
+}
