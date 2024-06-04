@@ -1,5 +1,4 @@
 import React from "react";
-import WhyChooseUs from "./WhyChooseUs";
 
 export default function Hero({ heading, headingSpan }) {
   return (

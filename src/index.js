@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements, router } from 'react-router-dom'
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements, } from 'react-router-dom'
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
