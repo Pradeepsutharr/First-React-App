@@ -29,7 +29,10 @@ function Header() {
     };
   }, []);
 
-
+const LinkClick = ()=>{
+  setIsMenuOpen(false)
+}
+  
   return (
     <header
       className={`${headerFixed ? "header-fixed" : "header"
@@ -61,6 +64,7 @@ function Header() {
                   `inline-flex p-1 items-center font-medium ${isActive ? "text-yellow-400 active" : "text-gray-400"
                   } hover:text-yellow-300 duration-200 md:text-sm relative`
                 }
+                onClick={LinkClick}
               >
                 Home
               </NavLink>
@@ -73,6 +77,7 @@ function Header() {
                   `inline-flex p-1 items-center font-medium ${isActive ? "text-yellow-400 active" : "text-gray-400"
                   } hover:text-yellow-300 duration-200 md:text-sm relative`
                 }
+                onClick={LinkClick}
               >
                 Shop
               </NavLink>
@@ -85,6 +90,7 @@ function Header() {
                   `inline-flex p-1 items-center font-medium ${isActive ? "text-yellow-400 active" : "text-gray-400"
                   } hover:text-yellow-300 duration-200 md:text-sm relative`
                 }
+                onClick={LinkClick}
               >
                 About Us
               </NavLink>
@@ -97,6 +103,7 @@ function Header() {
                   `inline-flex p-1 items-center font-medium ${isActive ? "text-yellow-400 active" : "text-gray-400"
                   } hover:text-yellow-300 duration-200 md:text-sm relative`
                 }
+                onClick={LinkClick}
               >
                 Services
               </NavLink>
@@ -109,6 +116,7 @@ function Header() {
                   `inline-flex p-1 items-center font-medium ${isActive ? "text-yellow-400 active" : "text-gray-400"
                   } hover:text-yellow-300 duration-200 md:text-sm relative`
                 }
+                onClick={LinkClick}
               >
                 Blog
               </NavLink>
@@ -121,6 +129,7 @@ function Header() {
                   `inline-flex p-1 items-center font-medium ${isActive ? "text-yellow-400 active " : "text-gray-400"
                   } hover:text-yellow-300 duration-200 md:text-sm relative`
                 }
+                onClick={LinkClick}
               >
                 Contact Us
               </NavLink>
@@ -135,6 +144,7 @@ function Header() {
                   `inline-flex items-center mr-10 text-sm font-semibold ${isActive ? "text-white" : "text-white"
                   } hover:text-yellow-300 duration-200`
                 }
+                onClick={LinkClick}
               >
                 <FontAwesomeIcon icon="fa-solid fa-user" size="xl" />
               </NavLink>
@@ -147,6 +157,7 @@ function Header() {
                   `inline-flex items-center text-sm font-semibold ${isActive ? "text-white" : "text-white"
                   } hover:text-yellow-300 duration-200`
                 }
+                onClick={LinkClick}
               >
                 <FontAwesomeIcon icon="fa-solid fa-cart-shopping" size="xl" />
               </NavLink>
