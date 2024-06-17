@@ -6,23 +6,23 @@ function Contact() {
             <div className="container mx-auto">
                 <div className="flex justify-center">
                     <div className="md:w-8/12 w-ful">
-                        <div className="flex flex-wrap items-center">
-                            <div className="w-full md:w-1/3 pr-10">
-                                <div className="flex items-center justify-center">
+                        <div className="flex flex-wrap items-center gap-y-2">
+                            <div className="w-full lg:w-1/3  pr-10">
+                                <div className="flex items-center lg:justify-center">
                                     <span><i className="!flex justify-center items-center h-[50px] w-[50px] rounded-md text-white bg-[#3b5d50] fa-solid fa-location-dot"></i></span>
                                     <span className=' ms-5 text-gray-500 text-sm font-normal'>43 Raymouth Rd. Baltemoer, London 3910</span>
                                 </div>
                             </div>
 
-                            <div className="w-full md:w-1/3 pr-10">
-                                <div className="flex items-center justify-center">
+                            <div className="w-full lg:w-1/3  pr-10">
+                                <div className="flex items-center lg:justify-center">
                                     <span><i className="!flex justify-center items-center h-[50px] w-[50px] rounded-md text-white bg-[#3b5d50] fa-solid fa-location-dot"></i></span>
                                     <span className=' ms-5 text-gray-500 text-sm font-normal'>info@yourdomain.com</span>
                                 </div>
                             </div>
 
-                            <div className="w-full md:w-1/3 pr-10">
-                                <div className="flex items-center justify-center">
+                            <div className="w-full lg:w-1/3  pr-10">
+                                <div className="flex items-center lg:justify-center">
                                     <span><i className="!flex justify-center items-center h-[50px] w-[50px] rounded-md text-white bg-[#3b5d50] fa-solid fa-location-dot"></i></span>
                                     <span className=' ms-5 text-gray-500 text-sm font-normal'>+1 294 3925 3939</span>
                                 </div>
@@ -31,13 +31,13 @@ function Contact() {
                         </div>
 
                         <form action="" className='py-16'>
-                            <div className="flex justify-between ">
-                                <div className="w-full md:w-1/2 pr-2">
+                            <div className="flex flex-wrap justify-between">
+                                <div className="w-full md:w-[48%]">
                                     <label htmlFor="f-name">First Name</label>
                                     <input id='f-name' className='border border-gray-300 p-3 w-full bg-white rounded-md' type="text" />
                                 </div>
 
-                                <div className="w-full md:w-1/2 ps-2">
+                                <div className="w-full md:w-[48%]">
                                     <label htmlFor="L-name">Last Name</label>
                                     <input id='L-name' className='border border-gray-300 rounded-md p-3 w-full bg-white rounded-md' type="text" />
                                 </div>

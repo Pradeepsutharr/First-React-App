@@ -81,8 +81,8 @@ function Footer() {
                     </div>
 
                     <div className="w-full md:w-2/3">
-                        <div className="flex flex-wrap gap-y-4 justify-center mt-5">
-                            <div className="w-1/2 md:w-1/4">
+                        <div className="flex flex-wrap gap-y-4 justify-center mt-5 ">
+                            <div className="w-full md:w-1/2 lg:w-1/4">
                                 <ul className="md:ms-14 ms-0">
                                     <li className="my-3">
                                         <Link className="hover:text-gray-500 py-1 duration-300 text-[#3b5d50]">About Us</Link>
@@ -102,7 +102,7 @@ function Footer() {
                                 </ul>
                             </div>
 
-                            <div className="w-1/2 md:w-1/4">
+                            <div className="w-full md:w-1/2 lg:w-1/4">
                                 <ul className="md:ms-14 ms-0">
                                     <li className="my-3">
                                         <Link className="hover:text-gray-500 py-1 duration-300 text-[#3b5d50]">Support</Link>
@@ -118,7 +118,7 @@ function Footer() {
                                 </ul>
                             </div>
 
-                            <div className="w-1/2 md:w-1/4">
+                            <div className="w-full md:w-1/2 lg:w-1/4">
                                 <ul className="md:ms-14 ms-0">
                                     <li className="my-3">
                                         <Link className="hover:text-gray-500 py-1 duration-300 text-[#3b5d50]">Jobs</Link>
@@ -138,7 +138,7 @@ function Footer() {
                                 </ul>
                             </div>
 
-                            <div className="w-1/2 md:w-1/4">
+                            <div className="w-full md:w-1/2 lg:w-1/4">
                                 <ul className="md:ms-14 ms-0">
                                     <li className="my-3">
                                         <Link className="hover:text-gray-500 py-1 duration-300 text-[#3b5d50]">Nordic Chair</Link>

@@ -12,7 +12,7 @@ function Header() {
 
   useEffect(() => {
     function handleScroll() {
-      if (window.scrollY > 500) {
+      if (window.scrollY > 600) {
         setHeaderFixed(true)
       } else {
         setHeaderFixed(false)
@@ -29,13 +29,15 @@ function Header() {
     };
   }, []);
 
-const LinkClick = ()=>{
-  setIsMenuOpen(false)
-}
-  
+
+
+  const LinkClick = () => {
+    setIsMenuOpen(false)
+  }
+
   return (
     <header
-      className={`${headerFixed ? "header-fixed" : "header"
+      className={`${headerFixed ? "header-fixed" : ""
         } transition-all duration-300 relative flex items-center py-6`}
       style={{ backgroundColor: "#3b5d50" }}
     >
@@ -53,7 +55,7 @@ const LinkClick = ()=>{
         </div>
 
         <nav
-          className={`md:flex basis-full grow md:basis-auto duration-200 overflow-hidden md:overflow-visible ${isMenuOpen ? "h-[360px] md:h-0" : "h-0"
+          className={`md:flex basis-full grow md:basis-auto duration-300 ease-out overflow-hidden md:overflow-visible ${isMenuOpen ? "h-[360px] md:h-0" : "h-0"
             }`}
         >
           <ul className="flex md:flex-row mt-5 md:mt-0 gap-y-5 flex-col md:items-center justify-center ms-auto mr-10">
