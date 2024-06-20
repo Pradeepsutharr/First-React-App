@@ -38,7 +38,7 @@ function Header() {
   return (
     <header
       className={`${headerFixed ? "header-fixed" : ""
-        } transition-all duration-300 relative flex items-center py-6`}
+        } transition-all duration-300 relative flex items-center py-4`}
       style={{ backgroundColor: "#3b5d50" }}
     >
       <div className="container flex-wrap mx-auto flex justify-between items-center">
