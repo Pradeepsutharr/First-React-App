@@ -59,7 +59,7 @@ header ul li a.relative::before {
   height: 2px;
   background-color: currentColor;
   position: absolute;
-  bottom: 5%;
+  bottom: 4%;
   left: 0;
   transform-origin: right top;
   transform: scale(0, 1);
