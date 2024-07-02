@@ -118,11 +118,15 @@ export default function ReviewSlider() {
                 }
             }
         };
-        
-        updateNavigation();
+
+        const interval = setInterval(() => {
+            updateNavigation();
+        }, 1000);
+
         window.addEventListener('resize', updateNavigation);
         
         return () => {
+            clearInterval(interval);
             window.removeEventListener('resize', updateNavigation);
         };
     }, []);
@@ -151,7 +155,7 @@ export default function ReviewSlider() {
                         swiper.navigation.update();
                     }}
                     modules={[Navigation, Pagination, Autoplay]}
-                    className="mySwiper h-full py-20 mt-10 md:w-3/5 w-full mx-auto"
+                    className="mySwiper swiper-container h-full py-20 mt-10 md:w-3/5 w-full mx-auto"
                 >
                     <SwiperSlide className='m-0 text-center flex items-center justify-center'>
                         <blockquote className='text-center mb-10 text-gray-500 font-normal leading-loose'>“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”
@@ -190,3 +194,4 @@ export default function ReviewSlider() {
         </section>
     );
 }
+
